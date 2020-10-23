@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Meowskins.wtf - Ух, какая рулеточка!</title>
+    <meta name="verification" content="ceae876dd2b7a0e2084c12379d612b" />
+    <meta charset="utf-8"/>
+    <meta name="csrf-token" content="PNJ9RAZEd6Tu9xQnw9Gn8CcBhFSJmNyMoxvmzaUe">
+        <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="default/css/style.css@ver=50.css"/>
+    <link rel="stylesheet" type="text/css" href="default/css/media.css@ver=50.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <link rel="shortcut icon" href="default/images/favicon.ico@ver=50"/>
+    <script src="https://kit.fontawesome.com/f8c641bff6.js" crossorigin="anonymous"></script>
+    <script>window.configCentrifuge = {"url":"wss:\/\/centrifugo.meowskins.wtf\/connection\/websocket","token":"35fe9bf7dbb2d68e1c99ad15fcf48ec5eb81481ed31e620df13a56426d7a8eae","user_id":"7aa7008a899291ba7d55c06ea4526d0f","time":"1603469755"};</script>    </head>
+<body>
+
+<div id="app">
+    <div style="display:none;">
+    <div class="modal modal-sh" id="modal-1" style="width:1000px;">
+                    <modal-deposit
+                    ref="modalDeposit"
+                    
+                    url="https://meowskins.wtf/billing/get-form"
+                    :min="15"
+            ></modal-deposit>
+            </div>
+    <div class="modal" id="modal-2">
+        <modal-exchange
+                ref="modalExchange"
+                items-url="https://meowskins.wtf/inventory/exchange-items"
+                items-url-action="https://meowskins.wtf/inventory/action/exchange-items"
+        ></modal-exchange>
+    </div>
+    <div class="modal" id="modal-3">
+        <modal-withdraw
+                ref="modalWithdraw"
+                items-url="https://meowskins.wtf/inventory/withdraw-items"
+                items-url-action="https://meowskins.wtf/inventory/action/withdraw-items"
+                :max-items="15"
+        ></modal-withdraw>
+    </div>
+    <div class="modal-faq" id="modal-4">
+        <modal-faq
+                ref="modalFaq"
+        ></modal-faq>
+    </div>
+    <!-- <div class="modal" id="modal-4">
+        <modal-bot
+                ref="modalBot"
+                items-url="https://meowskins.wtf/inventory/bot"
+        ></modal-bot>
+    </div> -->
+    <div class="modal" id="modal-5">
+        <modal-withdraws
+                ref="modalWithdraws"
+                items-url="https://meowskins.wtf/inventory/withdraws"
+        ></modal-withdraws>
+    </div>
+    
+    <div class="modal-faq" id="modal-6">
+        <modal-user-agreement
+                ref="modalUserAgreement"
+        ></modal-user-agreement>
+    </div>
+</div>
+
+    <div class="wrapper">
+        <div class="header">
+                            <a href="roulette.html" class="logo"></a>
+                    
+                        
+            <ul class="nav">
+                                    <li class="active">
+        <a href="roulette.html" class="">Домик</a>
+    </li>
+                    
+                                
+
+                <!-- <navigation-link
+                        handler="modalBot"
+                        title="Инвентари ботов"
+                ></navigation-link> -->
+
+                
+                <li>
+                    <a href="https://vk.com/im?media=&amp;sel=-178314296" target="_blank">
+                        Поддержка
+                    </a>
+                </li>
+
+                <navigation-link
+                        handler="modalFaq"
+                        title="F.A.Q"
+                ></navigation-link> 
+            </ul>
+
+                            <div class="login"><a href="oauth/steam/redirect.html"></a></div>
+                        <div class="clear"></div>
+        </div>
+        
+        <div class="select-game">
+            <div class="select-game-text">Выберите тип игры:  </div>
+            <ul>
+                
+                    <a href="roulette.html"><li class="active roulette"></li></a>
+                     <a href="index.html"><li class="crash"></li></a>
+                                    
+            </ul>
+        </div>
+         
+    <div class="panel">
+        <roulette-mini-bets color-bet="[[&quot;#FF5C4D&quot;,&quot;#15B5B0&quot;,&quot;#A1F7A1&quot;,&quot;#C9D9F0&quot;,&quot;#6DECE0&quot;,&quot;#436CB6&quot;,&quot;#FBE698&quot;,&quot;#B4F8C8&quot;,&quot;#F9BDC0&quot;,&quot;#FF9636&quot;,&quot;#713770&quot;,&quot;#F4B9B8&quot;,&quot;#FBCAA7&quot;,&quot;#FFCD58&quot;,&quot;#5DD9FB&quot;,&quot;#FFD8F1&quot;,&quot;#72435C&quot;,&quot;#BD97CB&quot;,&quot;#B34270&quot;,&quot;#D8CEE6&quot;,&quot;#FFC2C7&quot;,&quot;#747080&quot;],[&quot;#D8CEE6&quot;,&quot;#B4F8C8&quot;,&quot;#C9D9F0&quot;,&quot;#FBE698&quot;,&quot;#713770&quot;,&quot;#FBCAA7&quot;,&quot;#FF5C4D&quot;,&quot;#436CB6&quot;,&quot;#B34270&quot;,&quot;#72435C&quot;,&quot;#6DECE0&quot;,&quot;#FFC2C7&quot;,&quot;#15B5B0&quot;,&quot;#A1F7A1&quot;,&quot;#747080&quot;,&quot;#F9BDC0&quot;,&quot;#FF9636&quot;,&quot;#FFD8F1&quot;,&quot;#5DD9FB&quot;,&quot;#BD97CB&quot;,&quot;#FFCD58&quot;,&quot;#F4B9B8&quot;],[&quot;#FF69B4&quot;,&quot;#FF0BAC&quot;,&quot;#FF5412&quot;,&quot;#F9E830&quot;,&quot;#df1cbd&quot;,&quot;#58E4E0&quot;,&quot;#65FC6A&quot;,&quot;#C71585&quot;,&quot;#3A2B30&quot;,&quot;#F52870&quot;,&quot;#FB475E&quot;,&quot;#df2525&quot;,&quot;#221530&quot;,&quot;#168fff&quot;,&quot;#00FFFF&quot;,&quot;#7CF3A0&quot;,&quot;#68da1b&quot;,&quot;#FB2860&quot;,&quot;#FFF343&quot;,&quot;#ED7890&quot;,&quot;#D7BAFE&quot;,&quot;#9125ff&quot;,&quot;#65FC6A&quot;,&quot;#294EA0&quot;,&quot;#F766A0&quot;,&quot;#B46E40&quot;,&quot;#04D4F0&quot;,&quot;#fff&quot;,&quot;#FFF980&quot;,&quot;#FEC437&quot;,&quot;#6331FF&quot;,&quot;#975CAD&quot;,&quot;#FFFF00&quot;,&quot;#FF1493&quot;,&quot;#7CF3A0&quot;,&quot;#feb70b&quot;,&quot;#55EED0&quot;,&quot;#FF00FF&quot;],[&quot;#7CF3A0&quot;,&quot;#FEC437&quot;,&quot;#55EED0&quot;,&quot;#04D4F0&quot;,&quot;#FF1493&quot;,&quot;#F52870&quot;,&quot;#3A2B30&quot;,&quot;#B46E40&quot;,&quot;#FFF343&quot;,&quot;#00FFFF&quot;,&quot;#294EA0&quot;,&quot;#FFFF00&quot;,&quot;#ED7890&quot;,&quot;#df1cbd&quot;,&quot;#58E4E0&quot;,&quot;#fff&quot;,&quot;#168fff&quot;,&quot;#FB475E&quot;,&quot;#F9E830&quot;,&quot;#FF69B4&quot;,&quot;#65FC6A&quot;,&quot;#FFF980&quot;,&quot;#7CF3A0&quot;,&quot;#df2525&quot;,&quot;#FF00FF&quot;,&quot;#221530&quot;,&quot;#FF0BAC&quot;,&quot;#68da1b&quot;,&quot;#D7BAFE&quot;,&quot;#FB2860&quot;,&quot;#F766A0&quot;,&quot;#65FC6A&quot;,&quot;#feb70b&quot;,&quot;#9125ff&quot;,&quot;#6331FF&quot;,&quot;#FF5412&quot;,&quot;#975CAD&quot;,&quot;#C71585&quot;],[&quot;#68da1b&quot;,&quot;#FF0BAC&quot;,&quot;#df2525&quot;,&quot;#975CAD&quot;,&quot;#FB2860&quot;,&quot;#feb70b&quot;,&quot;#FFF980&quot;,&quot;#55EED0&quot;,&quot;#FF1493&quot;,&quot;#B46E40&quot;,&quot;#168fff&quot;,&quot;#FFF343&quot;,&quot;#df1cbd&quot;,&quot;#65FC6A&quot;,&quot;#FF69B4&quot;,&quot;#FF5412&quot;,&quot;#C71585&quot;,&quot;#3A2B30&quot;,&quot;#F52870&quot;,&quot;#ED7890&quot;,&quot;#294EA0&quot;,&quot;#FFFF00&quot;,&quot;#9125ff&quot;,&quot;#58E4E0&quot;,&quot;#7CF3A0&quot;,&quot;#221530&quot;,&quot;#fff&quot;,&quot;#F9E830&quot;,&quot;#FF00FF&quot;,&quot;#7CF3A0&quot;,&quot;#F766A0&quot;,&quot;#6331FF&quot;,&quot;#D7BAFE&quot;,&quot;#00FFFF&quot;,&quot;#04D4F0&quot;,&quot;#FB475E&quot;,&quot;#65FC6A&quot;,&quot;#FEC437&quot;],[&quot;#FBE698&quot;,&quot;#FFCD58&quot;,&quot;#72435C&quot;,&quot;#6DECE0&quot;,&quot;#F4B9B8&quot;,&quot;#A1F7A1&quot;,&quot;#F9BDC0&quot;,&quot;#436CB6&quot;,&quot;#C9D9F0&quot;,&quot;#747080&quot;,&quot;#FFC2C7&quot;,&quot;#D8CEE6&quot;,&quot;#5DD9FB&quot;,&quot;#FFD8F1&quot;,&quot;#BD97CB&quot;,&quot;#B34270&quot;,&quot;#FF9636&quot;,&quot;#FF5C4D&quot;,&quot;#713770&quot;,&quot;#FBCAA7&quot;,&quot;#15B5B0&quot;,&quot;#B4F8C8&quot;],[&quot;#68da1b&quot;,&quot;#F52870&quot;,&quot;#ED7890&quot;,&quot;#00FFFF&quot;,&quot;#F9E830&quot;,&quot;#6331FF&quot;,&quot;#294EA0&quot;,&quot;#58E4E0&quot;,&quot;#221530&quot;,&quot;#FFFF00&quot;,&quot;#55EED0&quot;,&quot;#168fff&quot;,&quot;#B46E40&quot;,&quot;#FF0BAC&quot;,&quot;#FB2860&quot;,&quot;#fff&quot;,&quot;#7CF3A0&quot;,&quot;#df1cbd&quot;,&quot;#D7BAFE&quot;,&quot;#975CAD&quot;,&quot;#C71585&quot;,&quot;#65FC6A&quot;,&quot;#04D4F0&quot;,&quot;#FFF980&quot;,&quot;#7CF3A0&quot;,&quot;#FF5412&quot;,&quot;#df2525&quot;,&quot;#9125ff&quot;,&quot;#FF69B4&quot;,&quot;#FEC437&quot;,&quot;#F766A0&quot;,&quot;#feb70b&quot;,&quot;#FFF343&quot;,&quot;#65FC6A&quot;,&quot;#3A2B30&quot;,&quot;#FF1493&quot;,&quot;#FF00FF&quot;,&quot;#FB475E&quot;],[&quot;#F52870&quot;,&quot;#ED7890&quot;,&quot;#7CF3A0&quot;,&quot;#FF5412&quot;,&quot;#C71585&quot;,&quot;#975CAD&quot;,&quot;#FF1493&quot;,&quot;#65FC6A&quot;,&quot;#D7BAFE&quot;,&quot;#F766A0&quot;,&quot;#df1cbd&quot;,&quot;#6331FF&quot;,&quot;#FFF980&quot;,&quot;#df2525&quot;,&quot;#04D4F0&quot;,&quot;#168fff&quot;,&quot;#F9E830&quot;,&quot;#65FC6A&quot;,&quot;#FF69B4&quot;,&quot;#3A2B30&quot;,&quot;#FB2860&quot;,&quot;#7CF3A0&quot;,&quot;#FB475E&quot;,&quot;#B46E40&quot;,&quot;#FEC437&quot;,&quot;#FFF343&quot;,&quot;#221530&quot;,&quot;#9125ff&quot;,&quot;#fff&quot;,&quot;#55EED0&quot;,&quot;#FF0BAC&quot;,&quot;#00FFFF&quot;,&quot;#58E4E0&quot;,&quot;#FFFF00&quot;,&quot;#294EA0&quot;,&quot;#feb70b&quot;,&quot;#68da1b&quot;,&quot;#FF00FF&quot;]]"></roulette-mini-bets>
+    </div>
+    <div class="container">
+        <roulette-circle    user="null" 
+                            color-bet="[[&quot;#FF5C4D&quot;,&quot;#15B5B0&quot;,&quot;#A1F7A1&quot;,&quot;#C9D9F0&quot;,&quot;#6DECE0&quot;,&quot;#436CB6&quot;,&quot;#FBE698&quot;,&quot;#B4F8C8&quot;,&quot;#F9BDC0&quot;,&quot;#FF9636&quot;,&quot;#713770&quot;,&quot;#F4B9B8&quot;,&quot;#FBCAA7&quot;,&quot;#FFCD58&quot;,&quot;#5DD9FB&quot;,&quot;#FFD8F1&quot;,&quot;#72435C&quot;,&quot;#BD97CB&quot;,&quot;#B34270&quot;,&quot;#D8CEE6&quot;,&quot;#FFC2C7&quot;,&quot;#747080&quot;],[&quot;#D8CEE6&quot;,&quot;#B4F8C8&quot;,&quot;#C9D9F0&quot;,&quot;#FBE698&quot;,&quot;#713770&quot;,&quot;#FBCAA7&quot;,&quot;#FF5C4D&quot;,&quot;#436CB6&quot;,&quot;#B34270&quot;,&quot;#72435C&quot;,&quot;#6DECE0&quot;,&quot;#FFC2C7&quot;,&quot;#15B5B0&quot;,&quot;#A1F7A1&quot;,&quot;#747080&quot;,&quot;#F9BDC0&quot;,&quot;#FF9636&quot;,&quot;#FFD8F1&quot;,&quot;#5DD9FB&quot;,&quot;#BD97CB&quot;,&quot;#FFCD58&quot;,&quot;#F4B9B8&quot;],[&quot;#FF69B4&quot;,&quot;#FF0BAC&quot;,&quot;#FF5412&quot;,&quot;#F9E830&quot;,&quot;#df1cbd&quot;,&quot;#58E4E0&quot;,&quot;#65FC6A&quot;,&quot;#C71585&quot;,&quot;#3A2B30&quot;,&quot;#F52870&quot;,&quot;#FB475E&quot;,&quot;#df2525&quot;,&quot;#221530&quot;,&quot;#168fff&quot;,&quot;#00FFFF&quot;,&quot;#7CF3A0&quot;,&quot;#68da1b&quot;,&quot;#FB2860&quot;,&quot;#FFF343&quot;,&quot;#ED7890&quot;,&quot;#D7BAFE&quot;,&quot;#9125ff&quot;,&quot;#65FC6A&quot;,&quot;#294EA0&quot;,&quot;#F766A0&quot;,&quot;#B46E40&quot;,&quot;#04D4F0&quot;,&quot;#fff&quot;,&quot;#FFF980&quot;,&quot;#FEC437&quot;,&quot;#6331FF&quot;,&quot;#975CAD&quot;,&quot;#FFFF00&quot;,&quot;#FF1493&quot;,&quot;#7CF3A0&quot;,&quot;#feb70b&quot;,&quot;#55EED0&quot;,&quot;#FF00FF&quot;],[&quot;#7CF3A0&quot;,&quot;#FEC437&quot;,&quot;#55EED0&quot;,&quot;#04D4F0&quot;,&quot;#FF1493&quot;,&quot;#F52870&quot;,&quot;#3A2B30&quot;,&quot;#B46E40&quot;,&quot;#FFF343&quot;,&quot;#00FFFF&quot;,&quot;#294EA0&quot;,&quot;#FFFF00&quot;,&quot;#ED7890&quot;,&quot;#df1cbd&quot;,&quot;#58E4E0&quot;,&quot;#fff&quot;,&quot;#168fff&quot;,&quot;#FB475E&quot;,&quot;#F9E830&quot;,&quot;#FF69B4&quot;,&quot;#65FC6A&quot;,&quot;#FFF980&quot;,&quot;#7CF3A0&quot;,&quot;#df2525&quot;,&quot;#FF00FF&quot;,&quot;#221530&quot;,&quot;#FF0BAC&quot;,&quot;#68da1b&quot;,&quot;#D7BAFE&quot;,&quot;#FB2860&quot;,&quot;#F766A0&quot;,&quot;#65FC6A&quot;,&quot;#feb70b&quot;,&quot;#9125ff&quot;,&quot;#6331FF&quot;,&quot;#FF5412&quot;,&quot;#975CAD&quot;,&quot;#C71585&quot;],[&quot;#68da1b&quot;,&quot;#FF0BAC&quot;,&quot;#df2525&quot;,&quot;#975CAD&quot;,&quot;#FB2860&quot;,&quot;#feb70b&quot;,&quot;#FFF980&quot;,&quot;#55EED0&quot;,&quot;#FF1493&quot;,&quot;#B46E40&quot;,&quot;#168fff&quot;,&quot;#FFF343&quot;,&quot;#df1cbd&quot;,&quot;#65FC6A&quot;,&quot;#FF69B4&quot;,&quot;#FF5412&quot;,&quot;#C71585&quot;,&quot;#3A2B30&quot;,&quot;#F52870&quot;,&quot;#ED7890&quot;,&quot;#294EA0&quot;,&quot;#FFFF00&quot;,&quot;#9125ff&quot;,&quot;#58E4E0&quot;,&quot;#7CF3A0&quot;,&quot;#221530&quot;,&quot;#fff&quot;,&quot;#F9E830&quot;,&quot;#FF00FF&quot;,&quot;#7CF3A0&quot;,&quot;#F766A0&quot;,&quot;#6331FF&quot;,&quot;#D7BAFE&quot;,&quot;#00FFFF&quot;,&quot;#04D4F0&quot;,&quot;#FB475E&quot;,&quot;#65FC6A&quot;,&quot;#FEC437&quot;],[&quot;#FBE698&quot;,&quot;#FFCD58&quot;,&quot;#72435C&quot;,&quot;#6DECE0&quot;,&quot;#F4B9B8&quot;,&quot;#A1F7A1&quot;,&quot;#F9BDC0&quot;,&quot;#436CB6&quot;,&quot;#C9D9F0&quot;,&quot;#747080&quot;,&quot;#FFC2C7&quot;,&quot;#D8CEE6&quot;,&quot;#5DD9FB&quot;,&quot;#FFD8F1&quot;,&quot;#BD97CB&quot;,&quot;#B34270&quot;,&quot;#FF9636&quot;,&quot;#FF5C4D&quot;,&quot;#713770&quot;,&quot;#FBCAA7&quot;,&quot;#15B5B0&quot;,&quot;#B4F8C8&quot;],[&quot;#68da1b&quot;,&quot;#F52870&quot;,&quot;#ED7890&quot;,&quot;#00FFFF&quot;,&quot;#F9E830&quot;,&quot;#6331FF&quot;,&quot;#294EA0&quot;,&quot;#58E4E0&quot;,&quot;#221530&quot;,&quot;#FFFF00&quot;,&quot;#55EED0&quot;,&quot;#168fff&quot;,&quot;#B46E40&quot;,&quot;#FF0BAC&quot;,&quot;#FB2860&quot;,&quot;#fff&quot;,&quot;#7CF3A0&quot;,&quot;#df1cbd&quot;,&quot;#D7BAFE&quot;,&quot;#975CAD&quot;,&quot;#C71585&quot;,&quot;#65FC6A&quot;,&quot;#04D4F0&quot;,&quot;#FFF980&quot;,&quot;#7CF3A0&quot;,&quot;#FF5412&quot;,&quot;#df2525&quot;,&quot;#9125ff&quot;,&quot;#FF69B4&quot;,&quot;#FEC437&quot;,&quot;#F766A0&quot;,&quot;#feb70b&quot;,&quot;#FFF343&quot;,&quot;#65FC6A&quot;,&quot;#3A2B30&quot;,&quot;#FF1493&quot;,&quot;#FF00FF&quot;,&quot;#FB475E&quot;],[&quot;#F52870&quot;,&quot;#ED7890&quot;,&quot;#7CF3A0&quot;,&quot;#FF5412&quot;,&quot;#C71585&quot;,&quot;#975CAD&quot;,&quot;#FF1493&quot;,&quot;#65FC6A&quot;,&quot;#D7BAFE&quot;,&quot;#F766A0&quot;,&quot;#df1cbd&quot;,&quot;#6331FF&quot;,&quot;#FFF980&quot;,&quot;#df2525&quot;,&quot;#04D4F0&quot;,&quot;#168fff&quot;,&quot;#F9E830&quot;,&quot;#65FC6A&quot;,&quot;#FF69B4&quot;,&quot;#3A2B30&quot;,&quot;#FB2860&quot;,&quot;#7CF3A0&quot;,&quot;#FB475E&quot;,&quot;#B46E40&quot;,&quot;#FEC437&quot;,&quot;#FFF343&quot;,&quot;#221530&quot;,&quot;#9125ff&quot;,&quot;#fff&quot;,&quot;#55EED0&quot;,&quot;#FF0BAC&quot;,&quot;#00FFFF&quot;,&quot;#58E4E0&quot;,&quot;#FFFF00&quot;,&quot;#294EA0&quot;,&quot;#feb70b&quot;,&quot;#68da1b&quot;,&quot;#FF00FF&quot;]]" 
+                            bet-url="https://meowskins.wtf/roulette/make-bet " 
+                            preload-game=""
+                            config-prepare="30"></roulette-circle>
+        <roulette-game preload-game=""></roulette-game>
+        <div class="clear"></div>
+
+        <roulette-counter></roulette-counter>
+        <div class="clear"></div>
+    </div>
+
+    <!-- INVENTORY -->
+    <game-inventory
+        :user-items="[]"
+    ></game-inventory>
+
+    <!-- HISTORY -->
+    
+    <roulette-items></roulette-items>
+    
+
+        <navigation-chat
+    send-url="https://meowskins.wtf/chat/send"
+    delete-url="https://meowskins.wtf/chat/delete"
+    clear-url="https://meowskins.wtf/chat/clear"
+    :chat-online="23"
+    :chat-history="[{&quot;id&quot;:&quot;XTN7hVxfoGYgp9IVZfXC&quot;,&quot;user_id&quot;:177417,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561199062426620&quot;,&quot;name&quot;:&quot;SⱥรuҜe&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/51\/5195ff48c6998bec29790fc9e1ae8e8e62558552_medium.jpg&quot;,&quot;text&quot;:&quot;бомба*&quot;,&quot;time&quot;:&quot;12:20&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;DkodUHLvRc8UVrgp7TC2&quot;,&quot;user_id&quot;:177417,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561199062426620&quot;,&quot;name&quot;:&quot;SⱥรuҜe&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/51\/5195ff48c6998bec29790fc9e1ae8e8e62558552_medium.jpg&quot;,&quot;text&quot;:&quot;ты с ютуба ?!&quot;,&quot;time&quot;:&quot;12:20&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;fkFfRq7ebc1uJp60O5Kk&quot;,&quot;user_id&quot;:177417,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561199062426620&quot;,&quot;name&quot;:&quot;SⱥรuҜe&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/51\/5195ff48c6998bec29790fc9e1ae8e8e62558552_medium.jpg&quot;,&quot;text&quot;:&quot;хпахппахапхахпапхахпхапхап&quot;,&quot;time&quot;:&quot;13:34&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;D8oBox7m5sDn8hg98fGk&quot;,&quot;user_id&quot;:177417,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561199062426620&quot;,&quot;name&quot;:&quot;SⱥรuҜe&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/51\/5195ff48c6998bec29790fc9e1ae8e8e62558552_medium.jpg&quot;,&quot;text&quot;:&quot;найс скам сайт&quot;,&quot;time&quot;:&quot;13:34&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;n347lV9OUaRzorXEzYEs&quot;,&quot;user_id&quot;:73398,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198889119558&quot;,&quot;name&quot;:&quot;шкипOр csgorun.pro CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/27\/27afebaa14b5a1307a9475a8ddf6f314c43685bf_medium.jpg&quot;,&quot;text&quot;:&quot;Та нее&quot;,&quot;time&quot;:&quot;14:06&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;JvzTR72qAwPEBdcRbUn1&quot;,&quot;user_id&quot;:73398,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198889119558&quot;,&quot;name&quot;:&quot;шкипOр csgorun.pro CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/27\/27afebaa14b5a1307a9475a8ddf6f314c43685bf_medium.jpg&quot;,&quot;text&quot;:&quot;Не скам&quot;,&quot;time&quot;:&quot;14:07&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;oHdG6mzG32gID0YhJT5r&quot;,&quot;user_id&quot;:160475,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561199004351332&quot;,&quot;name&quot;:&quot;PoקcorŇ&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/83\/83eeff3a687c9b9d734b1e884a9869772988b4e1_medium.jpg&quot;,&quot;text&quot;:&quot;Чекайте я задепал щяс брить будет&quot;,&quot;time&quot;:&quot;18:34&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;n48WHl40xfH4KRFt1Dy8&quot;,&quot;user_id&quot;:73398,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198889119558&quot;,&quot;name&quot;:&quot;шкипOр csgorun.pro CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/27\/27afebaa14b5a1307a9475a8ddf6f314c43685bf_medium.jpg&quot;,&quot;text&quot;:&quot;зачем депал , если знаешь , что будет брить?&quot;,&quot;time&quot;:&quot;18:37&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;0f2pyRcCS44AIYpWnjqq&quot;,&quot;user_id&quot;:160475,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561199004351332&quot;,&quot;name&quot;:&quot;PoקcorŇ&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/83\/83eeff3a687c9b9d734b1e884a9869772988b4e1_medium.jpg&quot;,&quot;text&quot;:&quot;По рофлу)&quot;,&quot;time&quot;:&quot;18:37&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;3lqhsfzfT5vLR5UUw0YB&quot;,&quot;user_id&quot;:85413,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198831685310&quot;,&quot;name&quot;:&quot;Yuuto  •Csgorun.org•CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/46\/462cfaef9de4c5a7fbe10e12a0aeb56d0c78cbe0_medium.jpg&quot;,&quot;text&quot;:&quot;прикольно так&quot;,&quot;time&quot;:&quot;18:49&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;SrMKMmXcuXnsS41aAnmv&quot;,&quot;user_id&quot;:85413,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198831685310&quot;,&quot;name&quot;:&quot;Yuuto  •Csgorun.org•CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/46\/462cfaef9de4c5a7fbe10e12a0aeb56d0c78cbe0_medium.jpg&quot;,&quot;text&quot;:&quot;шкипOр csgorun.pro CS.FAIL,  чем там занят?&quot;,&quot;time&quot;:&quot;18:49&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;elQ9fn1a0jc4up71wSZ5&quot;,&quot;user_id&quot;:73398,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198889119558&quot;,&quot;name&quot;:&quot;шкипOр csgorun.pro CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/27\/27afebaa14b5a1307a9475a8ddf6f314c43685bf_medium.jpg&quot;,&quot;text&quot;:&quot;Сплю&quot;,&quot;time&quot;:&quot;18:49&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;piqgBoCFz1uHilOEVZeW&quot;,&quot;user_id&quot;:85413,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198831685310&quot;,&quot;name&quot;:&quot;Yuuto  •Csgorun.org•CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/46\/462cfaef9de4c5a7fbe10e12a0aeb56d0c78cbe0_medium.jpg&quot;,&quot;text&quot;:&quot;шкипOр csgorun.pro CS.FAIL, неплохо так&quot;,&quot;time&quot;:&quot;18:50&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;EheZnSwcBsRytyGaaYYg&quot;,&quot;user_id&quot;:73398,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198889119558&quot;,&quot;name&quot;:&quot;шкипOр csgorun.pro CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/27\/27afebaa14b5a1307a9475a8ddf6f314c43685bf_medium.jpg&quot;,&quot;text&quot;:&quot;А то 😎&quot;,&quot;time&quot;:&quot;18:50&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;8HGGc3xVL4LI9ZwP1bKU&quot;,&quot;user_id&quot;:85413,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198831685310&quot;,&quot;name&quot;:&quot;Yuuto  •Csgorun.org•CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/46\/462cfaef9de4c5a7fbe10e12a0aeb56d0c78cbe0_medium.jpg&quot;,&quot;text&quot;:&quot;Как дела у Нары? :DDD&quot;,&quot;time&quot;:&quot;18:50&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;TSQvMjnEDy27ops0dXjr&quot;,&quot;user_id&quot;:73398,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198889119558&quot;,&quot;name&quot;:&quot;шкипOр csgorun.pro CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/27\/27afebaa14b5a1307a9475a8ddf6f314c43685bf_medium.jpg&quot;,&quot;text&quot;:&quot;Вроде все гуд&quot;,&quot;time&quot;:&quot;18:50&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;myiV1ggq4xH3Ts2iDEON&quot;,&quot;user_id&quot;:85413,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198831685310&quot;,&quot;name&quot;:&quot;Yuuto  •Csgorun.org•CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/46\/462cfaef9de4c5a7fbe10e12a0aeb56d0c78cbe0_medium.jpg&quot;,&quot;text&quot;:&quot;ЭХ, скучно&quot;,&quot;time&quot;:&quot;18:52&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;Nfz3k7dyI65ZTYC4KuPI&quot;,&quot;user_id&quot;:73398,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198889119558&quot;,&quot;name&quot;:&quot;шкипOр csgorun.pro CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/27\/27afebaa14b5a1307a9475a8ddf6f314c43685bf_medium.jpg&quot;,&quot;text&quot;:&quot;Не скучай и попей  чай&quot;,&quot;time&quot;:&quot;18:55&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;j4GSxyfVOuskpGbSt6kc&quot;,&quot;user_id&quot;:85413,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198831685310&quot;,&quot;name&quot;:&quot;Yuuto  •Csgorun.org•CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/46\/462cfaef9de4c5a7fbe10e12a0aeb56d0c78cbe0_medium.jpg&quot;,&quot;text&quot;:&quot;окай, щас попью&quot;,&quot;time&quot;:&quot;18:57&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false},{&quot;id&quot;:&quot;bEYmNgP75BbqWFnXrWZk&quot;,&quot;user_id&quot;:73398,&quot;url&quot;:&quot;https:\/\/meowskins.wtf\/profile\/76561198889119558&quot;,&quot;name&quot;:&quot;шкипOр csgorun.pro CS.FAIL&quot;,&quot;avatar&quot;:&quot;https:\/\/steamcdn-a.akamaihd.net\/steamcommunity\/public\/images\/avatars\/27\/27afebaa14b5a1307a9475a8ddf6f314c43685bf_medium.jpg&quot;,&quot;text&quot;:&quot;Приятного 😂&quot;,&quot;time&quot;:&quot;19:04&quot;,&quot;is_admin&quot;:false,&quot;is_moderator&quot;:false,&quot;is_youtube&quot;:false}]"
+    :is-authorized="false"
+    :is-admin="false"
+    :is-moderator="false"
+></navigation-chat>
+    </div>
+
+
+
+    <div class="copy">
+        <user-agreement></user-agreement>
+        
+    </div>
+</div>
+<script src="default/js/jquery-1.9.1.js@ver=50"></script>
+<script src="default/js/jquery.mCustomScrollbar.js@ver=50"></script>
+<script src="default/js/jquery.arcticmodal-0.3.min.js@ver=50"></script>
+<script src="default/js/jquery.plugin.js"></script>
+<script src="default/js/jquery.countdown.js"></script>
+<script src="default/js/chart.min.js"></script>
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(61574224, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/61574224" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script src="js/app.js"></script>
+
+</body>
+</html><!-- url: lsart.ru -->
+
